@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Baloo+Bhai&display=swap"
+    />
+    <title>Semantics</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="heading">HTML Semantic Elements</div>
+      <div class="sub-title">
+        Exercise: replace all of the generic tags (div & span) with semantic
+        tags
+      </div>
+    </div>
+    <div id="menu">
+      <div class="sub-title">Content:</div>
+      <div>
+        <div class="menu-item"><a href="#definition"> 1. Definition </a></div>
+        <div class="menu-item"><a href="#benefits"> 2. Why we use semantic elements? </a></div>
+        <div class="menu-item"><a href="#generic"> 3. Some generic HTML elements </a></div>
+        <div class="menu-item"><a href="#exercise"> 4. Exercise instructions </a></div>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="definition">
+        <div class="title">Definition</div>
+        <div>Semantic elements = elements with a meaning.</div>
+        <div class="sub-title">What are Semantic Elements?</div>
+        <div>
+          A semantic element clearly describes its meaning to both the browser
+          and the developer. Examples of non-semantic elements:
+          <span class="highlight"> &lt;div> </span> and
+          <span class="highlight"> &lt;span> </span> - Tells nothing about its
+          content. Examples of semantic elements:
+          <span class="highlight"> &lt;form> </span>,
+          <span class="highlight"> &lt;table> </span>, and
+          <span class="highlight"> &lt;article> </span> - Clearly defines its
+          content.
+        </div>
+        <div class="source">
+          source:
+          <a
+            href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+            target="blank"
+          >
+            W3School
+          </a>
+        </div>
+      </div>
+      <div id="benefits">
+        <div class="title"> Why we use semantic elements? </div>
+        <div>
+          <div>
+            Search engines will consider its contents as important keywords to
+            influence the page's search rankings
+          </div>
+          <div>
+            Screen readers can use it as a signpost to help visually impaired
+            users navigate a page
+          </div>
+          <div>
+            Finding blocks of meaningful code is significantly easier than
+            searching through endless divs with or without semantic or
+            namespaced classes
+          </div>
+          <div>
+            Suggests to the developer the type of data that will be populated
+          </div>
+          <div>
+            Semantic naming mirrors proper custom element/component naming
+          </div>
+        </div>
+        <div class="source">
+          source:
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+            target="blank"
+          >
+            MDN
+          </a>
+        </div>
+      </div>
+      <div id="sidebar">
+        <div id="pic-box">
+          <img src="layout.jpg" alt="layout of this page" width="250" />
+          <div>Page Layout</div>
+        </div>
+
+        <div class="title">What elements should I use?</div>
+        <div>
+          When approaching which markup to use, ask yourself, "What element(s)
+          best describe/represent the data that I'm going to populate?" For
+          example, is it a list of data?; ordered, unordered?; is it an article
+          with sections and an aside of related information?; does it list out
+          definitions?; is it a figure or image that needs a caption?; should it
+          have a header and a footer in addition to the global site-wide header
+          and footer?; etc.
+        </div>
+      </div>
+      <div id="generic">
+        <div class="title">Some generic HTML elements</div>
+        <div class="sub-title underline">Block level element</div>
+        <div>
+          <b>div:</b> The HTML Content Division element &lt;div> is the generic
+          container for flow content. It has no effect on the content or layout
+          until styled in some way using CSS
+        </div>
+        <div class="sub-title underline">Inline level element</div>
+        <div>
+          <b>span:</b> The HTML &lt;span> element is a generic inline container
+          for phrasing content, which does not inherently represent anything. It
+          can be used to group elements for styling purposes (using the class or
+          id attributes), or because they share attribute values, such as lang.
+        </div>
+        <div class="source">
+          source:
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#text_content"
+            target="blank"
+          >
+            MDN
+          </a>
+        </div>
+      </div>
+      <div id="exercise">
+        <div class="title"> Exercise instructions: </div>
+        <div>
+          <div>
+            1. go to: <a href=""><i>Exercise repo</i></a> on github and download it
+            to your device
+          </div>
+          <div> 2. open the folder you just downloaded with VScode </div>
+          <div>
+            3. edit both index.html and style.css by replacing every div and span
+            with the proper semantic element that fits its content
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"> John Doe &copy; 2021 </div>
+  </body>
+</html>
